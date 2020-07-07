@@ -1,0 +1,9 @@
+.navbar.custom-navbar {
+  background-color: $PRIMARY-1 !important;
+  .navbar-nav {
+    .nav-link {
+      color: $WHITE;
+      font-weight: bold;
+    }
+  }
+}

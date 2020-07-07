@@ -1,7 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Button, Card, ListGroup } from 'react-bootstrap';
+import { Button, Card, ListGroup, Nav } from 'react-bootstrap';
 import { format } from 'money-formatter';
+import { Link } from 'react-router-dom';
 import { addProduct, cartState, emptyCart } from '../../store/reducers/cart';
 import { subtractProductCartServices, updateCartServices } from '../../services/cart';
 import DetailMin from './DetailMin';
@@ -56,9 +57,10 @@ const Cart = () => {
         >
           Vaciar
         </Button>
-        <Button variant="info" onClick={() => {}}>
+
+        <Link to="/cart" className="btn btn-info">
           Pagar
-        </Button>
+        </Link>
       </Card.Body>
     </Card>
   );

@@ -27,12 +27,14 @@ export const subtractProductCartServices = (product, cart) => {
   if (productIsInCart(products, product.tail)) {
     const cartDump = products
       .map((productItem) => {
+
+        // if product is distinc by id return
+        if (productItem.tail !== product.tail) return productItem;
+
+        // if quantiry update if Zero return false (0 cart)
         const acQuantity = productItem.quantity - 1;
         if (acQuantity === 0) return false;
-        if (productItem.tail === product.tail) {
-          return { ...productItem, quantity: acQuantity };
-        }
-        return productItem;
+        return { ...productItem, quantity: acQuantity };
       })
       .filter((product) => product !== false);
 

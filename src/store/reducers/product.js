@@ -23,8 +23,6 @@ export const addProducts = (products) => (dispatch) => {
   const pathProduct = `${ENDPOINT}/${ROUTES.GET_PRODUCTS}`;
   axios.get(pathProduct).then(function (response) {
     const { amiibo } = response.data;
-    console.log(amiibo);
-
     dispatch(add(addPricesToProducts(amiibo)));
   });
 };

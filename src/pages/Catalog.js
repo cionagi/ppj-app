@@ -16,6 +16,7 @@ const CatalogPage = () => {
     if (!list.length) {
       dispatch(addProducts());
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

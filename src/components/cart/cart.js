@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Button, Card, ListGroup, Nav } from 'react-bootstrap';
+import { Button, Card, ListGroup } from 'react-bootstrap';
 import { format } from 'money-formatter';
 import { Link } from 'react-router-dom';
 import { addProduct, cartState, emptyCart } from '../../store/reducers/cart';

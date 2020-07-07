@@ -7,7 +7,7 @@ import ProductList from '../components/product/productList';
 import { addProducts, isFetchingState, productListState } from '../store/reducers/product';
 import SpinnerCustom from '../components/SpinnerCustom';
 
-const CatalogPage = ({}) => {
+const CatalogPage = () => {
   const dispatch = useDispatch();
   const list = useSelector(productListState);
   const isFetching = useSelector(isFetchingState);

@@ -4,7 +4,7 @@ import { Button, Card, ListGroup } from 'react-bootstrap';
 import { format } from 'money-formatter';
 import { addProduct, cartState, emptyCart } from '../../store/reducers/cart';
 import { subtractProductCartServices, updateCartServices } from '../../services/cart';
-import Detail from './Detail';
+import DetailMin from './DetailMin';
 
 const Cart = () => {
   const cart = useSelector(cartState);
@@ -24,7 +24,7 @@ const Cart = () => {
     const { products } = cart;
     return products.map((product) => {
       return (
-        <Detail
+        <DetailMin
           key={`cart-detail-${product.tail}`}
           product={product}
           updateProductClick={updateProduct}

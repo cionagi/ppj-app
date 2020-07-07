@@ -54,11 +54,12 @@ const Cart = () => {
           onClick={() => {
             dispatch(emptyCart());
           }}
+          disabled={!cart.products.length}
         >
           Vaciar
         </Button>
 
-        <Link to="/cart" className="btn btn-info">
+        <Link to="/cart" className={`btn btn-info ${cart.products.length ? null : 'disabled'}`}>
           Pagar
         </Link>
       </Card.Body>

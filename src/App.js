@@ -19,11 +19,11 @@ const App = () => {
           <Route path="/cart">
             <CartPage />
           </Route>
-          <Route path="*">
-            <ErrorPage />
-          </Route>
           <Route path="/success">
             <CheckoutSuccess />
+          </Route>
+          <Route path="*">
+            <ErrorPage />
           </Route>
         </Switch>
       </Router>

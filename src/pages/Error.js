@@ -3,7 +3,7 @@ import { Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Layout from '../layout/Layout';
 
-const ErrorPage = ({}) => {
+const ErrorPage = () => {
   return (
     <Layout>
       <Alert variant="danger">

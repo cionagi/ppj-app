@@ -1,10 +1,14 @@
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Badge, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { cartState } from '../../store/reducers/cart';
+import { format } from 'money-formatter';
 
 const NavBarCustom = () => {
+  const cart = useSelector(cartState);
   return (
-    <Navbar expand="lg" className="custom-navbar">
+    <Navbar expand="lg" className="custom-navbar" fixed="top">
       <Navbar.Brand href="/">PPJ-App</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -14,6 +18,9 @@ const NavBarCustom = () => {
           </Link>
           <Link to="/cart" className="nav-link">
             Carrito
+          </Link>
+          <Link to="/cart" className="nav-link disabled">
+            <Badge variant="warning">{format('CLP', cart.total)}</Badge>
           </Link>
         </Nav>
       </Navbar.Collapse>

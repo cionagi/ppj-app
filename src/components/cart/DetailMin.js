@@ -2,8 +2,8 @@ import React from 'react';
 import { Button, ButtonGroup, ListGroup } from 'react-bootstrap';
 import { format } from 'money-formatter';
 
-const DetailMin = ({ product, updateProductClick, subtractProductCart, full = false }) => {
-  const { image, name, gameSeries, quantity, price } = product;
+const DetailMin = ({ product, updateProductClick, subtractProductCart }) => {
+  const { image, name, quantity, price } = product;
   return (
     <ListGroup.Item>
       <div className="cart__detail_min">

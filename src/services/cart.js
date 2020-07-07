@@ -27,7 +27,6 @@ export const subtractProductCartServices = (product, cart) => {
   if (productIsInCart(products, product.tail)) {
     const cartDump = products
       .map((productItem) => {
-
         // if product is distinc by id return
         if (productItem.tail !== product.tail) return productItem;
 

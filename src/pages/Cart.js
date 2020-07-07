@@ -6,7 +6,7 @@ import ProductDetailCart from '../components/cart/ProductListCart';
 import TotalCart from '../components/cart/TotalCart';
 import { cartState } from '../store/reducers/cart';
 
-const CartPage = ({}) => {
+const CartPage = () => {
   const cart = useSelector(cartState);
   return (
     <Layout>

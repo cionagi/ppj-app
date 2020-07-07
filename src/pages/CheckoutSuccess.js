@@ -2,7 +2,7 @@ import React from 'react';
 import { Alert } from 'react-bootstrap';
 import Layout from '../layout/Layout';
 
-const CheckoutSuccess = ({}) => {
+const CheckoutSuccess = () => {
   return (
     <Layout>
       <Alert variant="success">

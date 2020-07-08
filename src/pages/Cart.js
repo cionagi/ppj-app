@@ -1,10 +1,15 @@
+// Dependency
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+
+// Store
+import { cartState } from '../store/reducers/cart';
 import { useSelector } from 'react-redux';
+
+// components
 import Layout from '../layout/Layout';
 import ProductDetailCart from '../components/cart/ProductListCart';
 import TotalCart from '../components/cart/TotalCart';
-import { cartState } from '../store/reducers/cart';
 
 const CartPage = () => {
   const cart = useSelector(cartState);

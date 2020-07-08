@@ -1,10 +1,15 @@
+// Dependency
 import React, { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
+
+// Store
 import { useDispatch, useSelector } from 'react-redux';
+import { addProducts, isFetchingState, productListState } from '../store/reducers/product';
+
+// Components
 import Layout from '../layout/Layout';
 import Cart from '../components/cart/cart';
 import ProductList from '../components/product/productList';
-import { addProducts, isFetchingState, productListState } from '../store/reducers/product';
 import SpinnerCustom from '../components/SpinnerCustom';
 
 const CatalogPage = () => {

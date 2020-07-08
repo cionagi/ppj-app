@@ -1,6 +1,9 @@
+// Dependency
 import React from 'react';
-import { Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Alert } from 'react-bootstrap';
+
+// Layout
 import Layout from '../layout/Layout';
 
 const ErrorPage = () => {

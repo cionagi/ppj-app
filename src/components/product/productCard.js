@@ -1,9 +1,14 @@
+// Dependency
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
 import { format } from 'money-formatter';
+
+// Store
 import { addProduct, cartState } from '../../store/reducers/cart';
+import { useDispatch, useSelector } from 'react-redux';
 import { updateCartServices } from '../../services/cart';
+
+//
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();

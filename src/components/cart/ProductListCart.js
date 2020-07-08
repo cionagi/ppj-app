@@ -1,8 +1,13 @@
+// Dependency
 import React from 'react';
+
+// Store
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../../store/reducers/cart';
-import Detail from './Detail';
 import { subtractProductCartServices, updateCartServices } from '../../services/cart';
+
+// Components
+import Detail from './Detail';
 
 const ProductDetailCart = ({ cart }) => {
   const dispatch = useDispatch();

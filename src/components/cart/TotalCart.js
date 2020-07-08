@@ -1,6 +1,9 @@
+// Dependency
 import React from 'react';
-import { format } from 'money-formatter';
 import { Link } from 'react-router-dom';
+import { format } from 'money-formatter';
+
+// Store
 import { emptyCart } from '../../store/reducers/cart';
 import { useDispatch } from 'react-redux';
 

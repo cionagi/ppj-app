@@ -1,5 +1,8 @@
+// Dependency
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+// Pages
 import CartPage from './pages/Cart';
 import CatalogPage from './pages/Catalog';
 import CheckoutSuccess from './pages/CheckoutSuccess';

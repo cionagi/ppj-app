@@ -1,10 +1,15 @@
+// Dependency
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Button, Card, ListGroup } from 'react-bootstrap';
-import { format } from 'money-formatter';
 import { Link } from 'react-router-dom';
+import { format } from 'money-formatter';
+import { Button, Card, ListGroup } from 'react-bootstrap';
+
+//Store
 import { addProduct, cartState, emptyCart } from '../../store/reducers/cart';
+import { useDispatch, useSelector } from 'react-redux';
 import { subtractProductCartServices, updateCartServices } from '../../services/cart';
+
+// Components
 import DetailMin from './DetailMin';
 
 const Cart = () => {

@@ -1,9 +1,12 @@
+// Dependency
 import React from 'react';
-import { Badge, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { cartState } from '../../store/reducers/cart';
+import { Badge, Nav, Navbar } from 'react-bootstrap';
 import { format } from 'money-formatter';
+
+// Store
+import { cartState } from '../../store/reducers/cart';
 
 const NavBarCustom = () => {
   const cart = useSelector(cartState);

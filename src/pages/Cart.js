@@ -3,8 +3,8 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
 // Store
-import { cartState } from '../store/reducers/cart';
 import { useSelector } from 'react-redux';
+import { cartState } from '../store/reducers/cart';
 
 // components
 import Layout from '../layout/Layout';

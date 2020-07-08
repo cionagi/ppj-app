@@ -13,3 +13,12 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+.cart-floating {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 24rem;
+  background-color: $SECONDARY !important;
+  border-color: $SECONDARY !important;
+}

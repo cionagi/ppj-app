@@ -4,8 +4,8 @@ import { Button, Card } from 'react-bootstrap';
 import { format } from 'money-formatter';
 
 // Store
-import { addProduct, cartState } from '../../store/reducers/cart';
 import { useDispatch, useSelector } from 'react-redux';
+import { addProduct, cartState } from '../../store/reducers/cart';
 import { updateCartServices } from '../../services/cart';
 
 //

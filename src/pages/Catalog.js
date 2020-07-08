@@ -1,6 +1,6 @@
 // Dependency
 import React, { useEffect } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
 
 // Store
 import { useDispatch, useSelector } from 'react-redux';
@@ -33,7 +33,7 @@ const CatalogPage = () => {
         </Col>
         <Col xs={12} md={4}>
           <Row>
-            <Col xs={12}>
+            <Col xs={12} className="d-none d-md-block">
               <Cart />
             </Col>
           </Row>

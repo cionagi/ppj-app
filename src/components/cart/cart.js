@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import { format } from 'money-formatter';
 import { Button, Card, ListGroup } from 'react-bootstrap';
 
-//Store
-import { addProduct, cartState, emptyCart } from '../../store/reducers/cart';
+// Store
 import { useDispatch, useSelector } from 'react-redux';
+import { addProduct, cartState, emptyCart } from '../../store/reducers/cart';
 import { subtractProductCartServices, updateCartServices } from '../../services/cart';
 
 // Components

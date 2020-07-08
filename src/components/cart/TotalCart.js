@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { format } from 'money-formatter';
 
 // Store
-import { emptyCart } from '../../store/reducers/cart';
 import { useDispatch } from 'react-redux';
+import { emptyCart } from '../../store/reducers/cart';
 
 const TotalCart = ({ cart }) => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const TotalCart = ({ cart }) => {
       <Link
         to="/success"
         onClick={() => dispatch(emptyCart())}
-        className={`btn btn-info btn-lg btn-block`}
+        className="btn btn-info btn-lg btn-block"
       >
         Pagar
       </Link>

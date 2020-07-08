@@ -11,6 +11,7 @@ const Filters = ({ filterList = [], filterAction, filterSelected }) => {
           className="m-1"
           active={filter === filterSelected}
           onClick={() => filterAction(filter)}
+          size="sm"
         >
           {filter}
         </Button>

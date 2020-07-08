@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, ButtonGroup, ListGroup } from 'react-bootstrap';
 import { format } from 'money-formatter';
 
-const Detail = ({ product, updateProductClick, subtractProductCart, full = false }) => {
+const Detail = ({ product, updateProductClick, subtractProductCart }) => {
   const { image, name, gameSeries, quantity, price } = product;
   return (
     <ListGroup.Item>
@@ -20,12 +20,10 @@ const Detail = ({ product, updateProductClick, subtractProductCart, full = false
           {quantity}
         </div>
         <div className="product__price">
-          {' '}
           valor unit:
           {format('CLP', price)}
         </div>
         <div className="product__total">
-          {' '}
           Total:
           {format('CLP', price * quantity)}
         </div>

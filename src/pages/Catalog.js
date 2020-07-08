@@ -34,6 +34,7 @@ const CatalogPage = () => {
     }, []);
     setFilters([...filterDump]);
     setProductList(list);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [list]);
 
   const filterProductsBySerie = (gameSeries) => {

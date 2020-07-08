@@ -1,6 +1,6 @@
 // Dependency
 import React from 'react';
-import { Button, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import NavBarCustom from '../components/navbar/NavBarCustom';
 import CartModal from '../components/cart/CartModal';
 
@@ -13,7 +13,5 @@ const Layout = ({ children }) => {
     </Container>
   );
 };
-
-Layout.propTypes = {};
 
 export default Layout;

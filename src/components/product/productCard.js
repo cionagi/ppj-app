@@ -8,8 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addProduct, cartState } from '../../store/reducers/cart';
 import { updateCartServices } from '../../services/cart';
 
-//
-
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const cart = useSelector(cartState);
@@ -22,13 +20,10 @@ const ProductCard = ({ product }) => {
 
   return (
     <Card className="mb-4">
-      <Card.Img
-        loading="lazy"
-        variant="top"
-        src={image}
-        className="product-card__container"
-        style={{ maxHeight: '200px', maxWidth: '200px', objectFit: 'cover' }}
-      />
+      <div className="product-card__container_image">
+        <Card.Img loading="lazy" variant="top" src={image} className="product-card__container" />
+      </div>
+
       <Card.Body>
         <Card.Title className="text-center">{name}</Card.Title>
         <Card.Text>

@@ -1,5 +1,5 @@
 // Dependency
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Accordion, Button, Card } from 'react-bootstrap';
 
 const Filters = ({ filterList = [], filterAction, filterSelected }) => {
